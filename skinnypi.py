@@ -58,9 +58,9 @@ def on_connect(client, userdata, flags, rc):
 
 def on_message(client, userdata, msg):
     print('Message have received')
-    # example data: { "color": "1", "style": "1", "seconds": "10", "audio": "1"}
-    # color = (1=red,2=blue,3=green)
-    # style = (1=rainbow,2=gradient,3=flow)
+    # Example json data: { "color": "1", "style": "1", "seconds": "10", "audio": "1"}
+    # Color = (1=red,2=blue,3=green)
+    # Style = (1=rainbow,2=gradient,3=flow)
     # Audio = (1 = 1.wav,2 = 2.wav)
     # Seconds = how many seconds should it play
     data = msg.payload.decode()
